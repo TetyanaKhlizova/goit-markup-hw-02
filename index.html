@@ -15,49 +15,51 @@
     <!--Шапка сайта-->
     <header>
         <nav>
-        <a lang="en" href="./index.html">WebStudio</a>
-        <ul>
-            <li><a href="">Студия</a></li>
-            <li><a href="">Портфолио</a></li>
-            <li><a href="">Контакты</a></li>
+        <a class="logo" lang="en" href="./index.html"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+        <ul class="navi">
+            <li><a  class="navi-stud" href="">Студия</a></li>
+            <li><a class="navi-port" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="navi-cont" href="">Контакты</a></li>
         </ul>
         </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="contact">
+            <li><a class="contact-mail"href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contact-tel"href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
         
     </header>
     <!--Уникальный контент страницы-->
 <main>
     <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
+        <div class="hero">
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <button class="hero-btn" type="button">Заказать услугу</button>
+        </div>
     </section>
     <section>
-        <h2>Особенности</h2>
-        <ul>            
+        <h2 class="hidheader">Особенности</h2>
+        <ul class="peculiarities-list">            
             <li>
-                <h3>Внимание к деталям</h3>
-                <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                <h3 class="peculiarities">Внимание к деталям</h3>
+                <p class="peculiarities-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
             <li>
-                <h3>Пунктуальность</h3>
-                <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                <h3 class="peculiarities">Пунктуальность</h3>
+                <p class="peculiarities-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
             <li>
-                <h3>Планирование</h3>
-                <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <h3 class="peculiarities">Планирование</h3>
+                <p class="peculiarities-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
             <li>
-                <h3>Современные технологии</h3>
-                <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <h3 class="peculiarities">Современные технологии</h3>
+                <p class="peculiarities-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
     </section>
     <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
+        <h2 class="activity">Чем мы занимаемся</h2>
+        <ul class="activity-list">
             <li>
                 <img src="./images/box1.jpg" alt="Печать" width="370">
             </li>
@@ -70,42 +72,43 @@
         </ul>
     </section>
     <section>
-        <h2>Наша команда</h2>
-        <ul>
+        <h2 class="team">Наша команда</h2>
+        <ul class="team-list">
             <li>
                 <img src="./images/teamcard1.jpg" alt="Дизайнер" width="270">
-                <h3>Игорь Демьяненко</h3>
-                <p lang="en">Product Designer</p>
+                <h3 class="surname">Игорь Демьяненко</h3>
+                <p class="position"lang="en">Product Designer</p>
             </li>
             <li>
                 <img src="./images/teamcard2.jpg" alt="Разработчик" width="270">
-                <h3>Ольга Репина</h3>
-                <p lang="en">Frontend Developer</p>
+                <h3 class="surname">Ольга Репина</h3>
+                <p class="position"lang="en">Frontend Developer</p>
             </li>
             <li>
                 <img src="./images/teamcard3.jpg" alt="Маркетолог" width="270">
-                <h3>Николай Тарасов</h3>
-                <p lang="en">Marketing</p>                
+                <h3 class="surname">Николай Тарасов</h3>
+                <p class="position"lang="en">Marketing</p>                
             </li>
             <li>
                 <img src="./images/teamcard4.jpg" alt="Дизайнер интерфейсов" width="270">
-                <h3>Михаил Ермаков</h3>
-                <p lang="en">UI Designer</p>
+                <h3 class="surname">Михаил Ермаков</h3>
+                <p class="position"lang="en">UI Designer</p>
             </li>
         </ul>
     </section>
 </main>
     <!--Подвал страницы-->
     <footer>
-        <a lang="en" href="./index.html">WebStudio</a>
+        <div class="footer-section">
+        <a class="logo" lang="en" href="./index.html"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
         <address>
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <ul>
-                <li><a href="mailto:info@example.com">info@example.com</a> </li>
-                <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+            <ul class="footer-addr">
+                <li><a class="location"href="#">г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li><a class="footer-mail" href="mailto:info@example.com">info@example.com</a> </li>
+                <li><a class="footer-tel"href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
         </address>
-
+        </div>
     </footer>
 </body>
 </html>
