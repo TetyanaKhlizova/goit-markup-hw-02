@@ -1,18 +1,16 @@
 body {
-  font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
+  font-style: normal;
   letter-spacing: 0.03em;
 }
 
 /* header section*/
 .logo {
-  font-family: Raleway;
-  font-style: normal;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -30,7 +28,8 @@ body {
 .contact {
   list-style: none;
 }
-.navi-stud {
+.navi-stud,
+.navi-port-port {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -41,7 +40,9 @@ body {
   text-decoration: none;
 }
 .navi-port,
-.navi-cont {
+.navi-cont,
+.navi-port-stud,
+.navi-port-cont {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -52,7 +53,9 @@ body {
   text-decoration: none;
 }
 .navi-port:hover,
-.navi-port:focus {
+.navi-port-stud:hover,
+.navi-port:focus,
+.navi-port-stud:focus {
   color: #2196f3;
 }
 
@@ -74,8 +77,6 @@ body {
   background: #2f303a;
 }
 .hero-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -85,7 +86,7 @@ body {
   color: #ffffff;
 }
 .hero-btn {
-  font-family: Roboto;
+  font-family: inherit;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -95,6 +96,8 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
+  cursor: pointer;
+  border: none;
 }
 
 .hidheader {
@@ -102,13 +105,13 @@ body {
 }
 .peculiarities-list,
 .activity-list,
-.team-list {
+.team-list,
+.btn-list,
+.portfolio-list {
   list-style: none;
 }
 
 .peculiarities {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -116,8 +119,6 @@ body {
   color: #212121;
 }
 .peculiarities-text {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -125,24 +126,18 @@ body {
 }
 .activity,
 .team {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   color: #212121;
 }
 .surname {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: #212121;
 }
 .position {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -173,7 +168,69 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+/*main portfolio section*/
+.btn-all {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
+  border: none;
+}
+.btn-web,
+.btn-app,
+.btn-design,
+.btn-market {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #212121;
+  background: #f5f4fa;
+  border: none;
+  cursor: pointer;
+}
+.btn-web:hover,
+.logo-web:focus,
+.btn-app:hover,
+.btn-app:focus,
+.btn-design:hover,
+.btn-design:focus,
+.btn-market:hover,
+.btn-market:focus {
+  color: #2196f3;
+}
+
+.portfolio-list-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.portfolio-list-link {
+  text-decoration: none;
+}
+.portfolio-list-name:hover,
+.portfolio-list-name:focus,
+.portfolio-list-type:hover,
+.portfolio-list-type:focus {
+  color: #2196f3;
+}
+.portfolio-list-type {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #757575;
 }
