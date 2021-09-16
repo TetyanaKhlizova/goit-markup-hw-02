@@ -1,8 +1,12 @@
 :root {
   --primary-color: #212121;
   --secondary-color: #757575;
+  --logo-header-color: #000000;
   --title-color: #ffffff;
   --accent-color: #2196f3;
+  --bkground-color-title: #2f303a;
+  --bkground-color-teamandbtn: #f5f4fa;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -26,23 +30,26 @@ body {
   line-height: 1.2;
 }
 
-.logo-web {
+.logo {
   color: var(--accent-color);
 }
-.logo-studio {
-  color: #000000;
+.logo-studio-header {
+  color: var(--logo-header-color);
 }
-.logo-studio:hover,
-.logo-studio:focus {
+.logo-studio-header:hover,
+.logo-studio-header:focus,
+.logo-studio-footer:hover,
+.logo-studio-footer:focus {
   color: var(--accent-color);
 }
 
 .navi-stud,
-.navi-port-port,
 .navi-port,
 .navi-cont,
 .navi-port-stud,
-.navi-port-cont {
+.navi-port-port,
+.navi-port-cont,
+.contact-header {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -59,6 +66,8 @@ body {
 .navi-port-stud:hover,
 .navi-port:focus,
 .navi-port-stud:focus,
+.navi-port-port:hover,
+.navi-port-port:focus,
 .navi-cont:hover,
 .navi-cont:focus {
   color: var(--accent-color);
@@ -68,11 +77,6 @@ body {
   color: var(--accent-color);
 }
 .contact-header {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
 .contact-header:hover,
@@ -83,7 +87,7 @@ body {
 /*main studio section*/
 
 .hero {
-  background: #2f303a;
+  background-color: var(--bkground-color-title);
 }
 .hero-title {
   font-weight: 900;
@@ -127,11 +131,14 @@ body {
   color: var(--secondary-color);
 }
 .activity,
-.team {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   color: var(--primary-color);
+}
+.team-section {
+  background-color: var(--bkground-color-teamandbtn);
 }
 .surname {
   font-weight: 500;
@@ -149,10 +156,13 @@ body {
 /* footer section*/
 
 .footer-section {
-  background: #2f303a;
+  background-color: var(--bkground-color-title);
 }
-
-.location {
+.logo-studio-footer {
+  color: var(--title-color);
+}
+.location,
+.contact-footer {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -160,11 +170,7 @@ body {
   color: var(--title-color);
 }
 .contact-footer {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contact-color);
 }
 .contact-footer:hover,
 .contact-footer:focus {
@@ -184,18 +190,11 @@ body {
   line-height: 1.6;
   text-align: center;
   color: var(--primary-color);
-  background: #f5f4fa;
+  background-color: var(--bkground-color-teamandbtn);
   border: none;
   cursor: pointer;
 }
-.btn-all:visited,
-.btn-web:visited,
-.btn-app:visited,
-.btn-design:visited,
-.btn-market:visited {
-  color: var(--title-color);
-  background-color: var(--accent-color);
-}
+
 .btn-all:hover,
 .btn-all:focus,
 .btn-web:hover,
@@ -209,7 +208,10 @@ body {
   color: var(--title-color);
   background-color: var(--accent-color);
 }
-
+.btn-list .btn-all.current {
+  color: var(--title-color);
+  background-color: var(--accent-color);
+}
 .portfolio-list-name {
   font-style: normal;
   font-weight: bold;
@@ -222,12 +224,7 @@ body {
 .portfolio-list-link {
   text-decoration: none;
 }
-.portfolio-list-name:hover,
-.portfolio-list-name:focus,
-.portfolio-list-type:hover,
-.portfolio-list-type:focus {
-  color: var(--accent-color);
-}
+
 .portfolio-list-type {
   font-style: normal;
   font-weight: normal;
